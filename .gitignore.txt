@@ -1,0 +1,10 @@
+__pycache__/
+*.pt
+*.pth
+*.zip
+*.tar
+*.csv
+*.mp4
+dataset/images/
+dataset/labels/
+runs/
