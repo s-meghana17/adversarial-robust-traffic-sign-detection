@@ -1,55 +1,46 @@
 # Adversarial Robust Traffic Sign Detection for Autonomous Vehicles
 
-##  Overview
-This project focuses on improving the robustness of traffic sign detection models under adversarial and adverse weather conditions such as fog, rain, blur, and low visibility. The system is designed for autonomous vehicle perception using YOLO-based object detection.
+## Project Overview
+This project implements an adversarially robust traffic sign detection system designed for autonomous vehicles. The model is trained to perform reliably under adverse environmental conditions such as fog, rain, blur, and low visibility.
 
-##  Problem Statement
-Traffic sign recognition systems often fail under adversarial environmental conditions, leading to unsafe decisions in autonomous vehicles. This project addresses this challenge by applying targeted adversarial data augmentations to enhance model robustness.
+##  Objective
+To improve traffic sign detection accuracy and confidence in adversarial and challenging weather conditions using data augmentation and robust training.
 
-##  Methodology
-- Dataset preparation and annotation
-- Adversarial weather-based augmentations
-- Training YOLO model on clean + augmented data
-- Evaluation using precision, recall, mAP, and confidence scores
-- Robust inference under unseen adversarial conditions
+##  Approach
+- YOLO-based object detection model
+- Adversarial weather augmentations applied during training
+- Training on clean + augmented datasets
+- Evaluation using standard detection metrics
+- Frontend interface for real-time inference
 
-##  Adversarial Augmentations Used
-- Fog simulation
-- Rain effect
+##  Adversarial Conditions Used
+- Fog
+- Rain
 - Motion blur
 - Gaussian noise
-- Brightness & contrast distortion
-
-##  Model Training
-- Base Model: YOLO
-- Training Strategy: Clean + Augmented dataset
-- Loss optimization for robust detection
+- Brightness and contrast variations
 
 ##  Evaluation Metrics
 - Precision
 - Recall
 - mAP@50
 - mAP@50–95
-- Confusion Matrix (Normalized & Unnormalized)
+- Confidence scores
 
-##  Results
-The adversarially trained model shows improved detection accuracy and confidence under adverse conditions compared to the baseline model.
+##  Frontend
+A simple frontend is provided to upload traffic sign images and visualize detection results with bounding boxes and confidence scores.
 
-##  Tech Stack
+##  Technologies Used
 - Python
 - YOLO
+- PyTorch
 - OpenCV
 - Albumentations
-- PyTorch
 - Kaggle
 
-##  Project Structure
-Refer to the repository structure for organized code, notebooks, and results.
-
-##  Future Work
-- Real-time deployment
-- Adversarial attack simulations
-- Integration with autonomous driving pipelines
+##  Repository Contents
+- `train_and_evaluate.ipynb` – Model training, augmentation, and evaluation
+- `frontend_app.py` – Frontend for inference and visualization
 
 ##  Author
 Meghana S  
