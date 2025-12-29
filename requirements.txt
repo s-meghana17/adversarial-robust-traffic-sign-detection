@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+albumentations
+numpy
+matplotlib
+seaborn
+torch
+torchvision
+tqdm
